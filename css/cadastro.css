@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+/* HEADER */
+
+
+.menu {
+    width: 50px;
+    display: none;
+}
+
+.menu1 {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menu2 {
+    width: 38vw;
+    height: 100vh;
+    position: absolute;
+    left: -100%;
+    align-items: flex-start;
+    transition: 1s;
+}
+
+
+.menu-lateral-ativo {
+    left: 0%;
+}
+
+body {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.cabecario {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    padding: 0 40px;
+    align-items: center;
+    min-height: 10vh;
+    max-height: auto;
+}
+
+.textologo {
+    font-size: 36px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.textologo a {
+    text-decoration: none;
+    color: white;
+}
+
+.lista {
+    list-style-type: none;
+    display: flex;
+    gap: 35px;
+}
+
+.submit {
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.submit:hover {
+    transform: scale(1.1);
+}
+
+.pesquisar {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.item:hover {
+    transform: scale(1.2);
+}
+
+
+/* FIM HEADER */
+
+
+
+
+
+/* MAIN */
+
+
+
+
+main {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    justify-items: center;
+    min-height: 80vh;
+    max-height: auto;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 0.7fr 1fr;
+}
+
+.login, .registrar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.esquerda {    
+    gap: 30px;
+    height: 70%;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.botaologin {
+    justify-self: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    align-self: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.titulocadastrese {
+    font-size: 36px;
+}
+
+.textocadastrese {
+    font-size: 24px;
+}
+
+.direita {
+    height: 70%;
+    padding: 20px;
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+.formulario {
+    width: 60%;
+}
+
+.input {
+    margin-bottom: 10px;
+    width: 70%;
+    border-radius: 8px;
+}
+
+.titulologin {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.checkboxlabel {
+    color: #ccc;
+}
+
+.off {
+    display: none;
+}
+
+.centralizar {
+    text-align: center;
+}
+
+.botaocadastrar, .logue a {
+    width: 30%;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 23px;
+}
+
+.bordaerro {
+    border: 1px solid red;
+}
+
+.erro {
+    color: red;
+}
+
+.confirmarsenha {
+    width: 55%;
+}
+
+.divlogin {
+    padding: 10px;
+}
+
+.divlogin p {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+
+
+/* FIM MAIN*/
+
+
+
+/* FOOTER */
+
+
+
+
+.rodape {
+    padding-bottom: 2px;
+    min-height: 10vh;
+    max-height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 8px;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.fotofooter {
+    height: 100%;
+}
+
+.logoredes {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.final {
+    display: grid;
+    align-items: flex-end;
+    height: 170px;
+}
+
+
+/* FOOTER */
+
+
+
+/* RESPONSIVIDADE */
+
+
+@media only screen and (min-width: 801px) {
+
+    .menu2 {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 1240px) {
+
+    .botaocadastrar {
+        width: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .pesquisar {
+        width: 80px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .item:hover {
+        transform: scale(1);
+    }
+    
+    .cabecario {
+        display: grid;
+        grid-template-columns: 0.1fr 5fr;
+        align-items: center;
+    }
+
+    .cabecaoff {
+        display: none;
+    }
+
+    .textologo {
+        display: block;
+        text-align: center;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .registrar {
+        width: 80%;
+    }
+
+    .divlogin {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .off {
+        display: block
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .direita {
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .lista {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .botaologin {
+        width: 50%;
+    }
+
+    .botaocadastrar {
+        width: 50%;
+    }
+
+    .textologo a {
+        font-size: 36px;
+    }
+    
+    .logoredes {
+        width: 30px;
+    }
+
+    .copyright {
+        font-size: 5px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 470px) {
+
+    .logoredes {
+        width: 23px;
+    }
+
+    .divflex {
+      gap: 0px;
+    }
+
+    .footertexto a {
+      font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+
+    .logoredes {
+        width: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 590px) {
+
+    .botaocadastrar {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .menu-lateral-ativo {
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+
+   .cadastrese a {
+    font-size: 15px;
+   }
+}

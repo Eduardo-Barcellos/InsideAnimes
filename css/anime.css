@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* HEADER */
+
+.menu {
+    width: 50px;
+    display: none;
+    justify-content: start;
+}
+
+.menu1 {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menu2 {
+    width: 38vw;
+    height: 100vh;
+    position: absolute;
+    left: -100%;
+    align-items: flex-start;
+    transition: 1s;
+}
+
+.menu-lateral-ativo {
+    left: 0%;
+}
+
+body {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.cabecario {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    padding: 0 40px;
+    align-items: center;
+    min-height: 10vh;
+    max-height: auto;
+}
+
+.textologo {
+    font-size: 36px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.textologo a {
+    text-decoration: none;
+    color: white;
+}
+
+.lista {
+    list-style-type: none;
+    display: flex;
+    gap: 35px;
+}
+
+.submit {
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.submit:hover {
+    transform: scale(1.1);
+}
+
+.pesquisar {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.item:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+/* FIM HEADER */
+
+
+
+
+/* MAIN */
+
+
+
+.container { 
+    min-height: 80vh;
+    max-height: auto;
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    gap: 20px;
+}
+
+.capaanime {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.nomeanime {
+    font-size: 56px;
+}
+
+.estrela {
+    width: 34px;
+}
+
+.sinopse {
+    font-size: 16px;
+}
+
+.infos2 {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.3fr;
+}
+
+.textoassistir {
+    text-align: center;
+    font-size: 25px;
+}
+
+.assistir {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ondeassistir {
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+
+/* FIM MAIN*/
+
+
+
+/* FOOTER */
+
+
+
+
+.rodape {
+    padding-bottom: 2px;
+    min-height: 10vh;
+    max-height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 8px;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.logoredes {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.final {
+    display: grid;
+    align-items: flex-end;
+    height: 170px;
+}
+
+/* FIM FOOTER */
+
+
+
+/* RESPONSIVIDADE */
+
+
+
+@media only screen and (max-width: 1040px) {
+
+    .ondeassistir {
+     width: 100px;
+    }
+ }
+
+ 
+@media only screen and (max-width: 900px) {
+
+    .pesquisar {
+        width: 80px;
+    }
+
+}
+
+@media only screen and (min-width: 801px) {
+
+    .menu2 {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 848px) {
+    
+    .sinopse {
+        font-size: 14px;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+
+    .item:hover {
+        transform: scale(1);
+    }
+    
+    .sinopse {
+        font-size: 14px;
+    }
+
+    .nomeanime {
+        font-size: 45px;    
+    }
+
+    .cabecario {
+        display: grid;
+        grid-template-columns: 0.1fr 5fr;
+        align-items: center;
+    }
+
+    .cabecaoff {
+        display: none;
+    }
+
+    .textologo {
+        display: block;
+        text-align: center;
+    }
+
+    .menu {
+        display: block;
+    }
+    
+    .off {
+        display: block
+    }
+
+    .lista {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .textologo a {
+        font-size: 36px;
+    }
+    
+    .logoredes {
+        width: 30px;
+    }
+
+    .copyright {
+        font-size: 5px;
+    }
+
+}
+
+ @media only screen and (max-width: 740px) {
+
+    .capaanime {
+        width: 150px;
+    }
+
+    .sinopse {
+        font-size: 13px;
+    }
+
+    .nomeanime {
+        font-size: 40px;
+    }
+
+    .infos p {
+        font-size: 13px;
+    }
+ }
+
+ @media only screen and (max-width: 650px) {
+
+    .sinopse {
+        font-size: 12px;
+    }
+ }
+
+
+ @media only screen and (max-width: 550px) {
+
+
+    .sinopse {
+        font-size: 10px;
+    }
+
+    .nomeanime {
+        font-size: 30px;
+    }
+
+    .ondeassistir {
+        width: 75px;
+    }
+
+    .container {
+        min-height: 70vh;
+    }
+ }
+
+ @media only screen and (max-width: 470px) {
+
+    .logoredes {
+        width: 23px;
+    }
+
+    .divflex {
+      gap: 0px;
+    }
+
+    .footertexto a {
+      font-size: 20px;
+    }
+
+}
+
+ @media only screen and (max-width: 460px) {
+
+    .capaanime {
+        width: 100px;
+    }
+    
+    .nomeanime {
+        font-size: 25px;
+    }
+
+    .sinopse {
+        font-size: 9px;
+    }
+
+    .infos p {
+        width: 10px;
+    }
+
+    .ondeassistir {
+        width: 50px;
+    }
+ }
+
+ @media only screen and (max-width: 420px) {
+
+    .logoredes {
+        width: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .menu-lateral-ativo {
+        width: 50vw;
+    }
+}

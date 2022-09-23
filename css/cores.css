@@ -1,0 +1,234 @@
+:root {
+
+    /* Background */
+    --corFundo: #0D0C13; /*Cor do Background*/
+    --corHF: #39325E;        /*Cor do Header e Footer*/
+
+
+    /* Header */
+    --corLink: #AB1567;          /*Cor do link do Header*/ 
+    --corPesquisar: #6B6654; /*Cor do pesquisar do Header*/
+
+
+    /* Home */
+    --cor-BackgroundLado: #3b244549; /*Cor do background dos animes do lado da home*/
+    
+
+    /* Login */
+    --corEsquerda: #5C1C78; /*Cor do bloco da esquerda no login e cadastras*/ 
+    --corDireita: #3B2445;     /*Cor do bloco da direita no login e cadastras*/
+    --corBotao: #39325E;     /*Cor do botao login e cadastra*/
+    --corBotaoHover: #32295e; /* Cor hover botao */
+
+    /* Admin */
+    --corDivAnime: #49455E;                  /*Cor de fundo da div anime no admin*/ 
+    --corBotaoAnime: #564e7c;              /*Cor do botao no admin quanto tiver Hover*/ 
+    --corContrasteDivAnime: #766CAB; /*Cor do pra contrastrar com a cor do Div anime*/
+    
+
+    /* Textos */
+    --corTexto: white; /*Cor dos textos*/
+
+
+    /* Anime */
+    --corShadow: none; /* Sombra das img de onde assistir*/
+
+    /* Adicionar / Editar*/
+    --corAddEditar: #5C1C78;
+}
+
+.whitemode {
+    
+    /* Background */
+    --corFundo: rgb(247, 247, 247); /*Cor do Background*/ 
+    --corHF: #2727b1;                      /*Cor do Header e Footer*/
+
+
+    /* Header */
+    --corPesquisar: #BA9E57; /*Cor do pesquisar do Header*/ 
+    --corLink: #E3961B;          /*Cor do link do Header*/
+
+
+    /* Textos */
+    --corTexto: black; /*Cor dos textos*/
+
+
+    /* Home */
+    --cor-BackgroundLado: #2727b13f; /*Cor do background dos animes do lado da home*/
+
+
+    /* Login */
+    --corEsquerda: #665252; /*Cor do bloco da esquerda no login e cadastras*/ 
+    --corDireita: #B3A1A1;    /*Cor do bloco da direita no login e cadastras*/
+    --corBotao: #4D3D3D;     /*Cor do botao login e cadastra*/
+    --corBotaoHover: #3a2e2e; /* Cor hover botao */
+
+
+    /* Anime */
+    --corDivAnime: #8368BA;                /*Cor de fundo da div anime no admin*/ 
+    --corBotaoAnime: #9c85ca;             /*Cor do botao no admin quanto tiver Hover*/ 
+    --corContrasteDivAnime: #C5A8FF; /*Cor do pra contrastrar com a cor do Div anime*/
+
+
+    /* Anime */
+    --corShadow: black; /* Sombra das img de onde assistir*/
+
+    /* Adicionar / Editar*/
+     --corAddEditar: #B3A1A1;
+
+}
+
+
+.mudartema { /* foto do sol */
+    cursor: pointer;
+    width: 33px;
+}
+
+p, h1, h2, h3, label, #foto, a, label { /* Todos textos */
+    color: var(--corTexto);
+    transition: 1s;
+}
+
+body {
+    background-color: var(--corFundo);
+    transition: 1s;
+}
+
+.ativo {
+    border-bottom: 3px white solid;
+    transition: 1s;
+}
+
+.ativo:hover {
+    border-color: var(--corLink);
+}
+
+
+
+
+
+
+
+/* HEADER */
+
+.menu2 {
+    background-color: var(--corHF);
+}
+
+.cabecario { /* Header da pagina */
+    background-color: var(--corHF);
+    transition: 1s;
+}
+
+.submit:hover { /* Botão de pesquisar do Header */
+    background-color: var(--corPesquisar);
+    transition: 0.2s;
+}
+
+.item a:hover { /* Links do Header */
+    color: var(--corLink);
+}
+
+
+
+
+
+
+
+
+/* ANIME */
+
+
+.ondeassistir {
+    box-shadow: 7px 7px var(--corShadow);
+    transition: 1s;
+}
+
+
+
+
+
+/* Add / Editar*/
+
+.background {
+    background-color: var(--corAddEditar);
+    transition: 1s;
+}
+
+
+
+
+/* HOME */
+
+.animes-lado, .animes-lado2 { /* Itens do lado direito do home */
+    background: var(--cor-BackgroundLado);
+    transition: 1s;
+}
+
+.menu2 {
+    background-color: var(--corHF);
+}
+
+
+
+
+
+/* LOGIN/CADASTRO */
+
+
+.esquerda { /* Lado esquerdo da pagina de login e cadastro */
+    background-color: var(--corEsquerda);
+    transition: 1s;
+}
+
+.direita { /* Lado direito da pagina de login e cadastro */
+background-color: var(--corDireita);
+transition: 1s;
+}
+
+.botaologin, .botaocadastrar, .logue a, .cadastrese a {
+    background-color: var(--corBotao);
+    transition: 1s;
+}
+
+.botaologin:hover, .botaocadastrar:hover,  .logue a:hover, .cadastrese a:hover {
+    background-color: var(--corBotaoHover);
+    transition: 1s;
+}
+
+
+
+
+
+/* ADMIN */
+
+
+.divflexanime { /* Background da lista de animes da pagina admin */
+    background-color: var(--corDivAnime);
+    border-bottom: solid 5px var(--corContrasteDivAnime);
+    transition: 1s;
+}
+
+.linkadd:hover, .link:hover { /* Botões de editar e adicionar da pagina admin */
+    background-color: var(--corBotaoAnime);
+    transition: 1s;
+}
+
+.link, .linkadd { /* Botões de editar e adicionar da pagina admin */
+    background-color: var(--corContrasteDivAnime);
+}
+
+
+
+
+
+/* FOOTER */
+
+.rodape { /* Footer da pagina */
+    background-color: var(--corHF);
+    transition: 1s;
+}
+
+.copyright { /* Não mudar a cor do Copyright do Footer */
+    color: white;
+}
